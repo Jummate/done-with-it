@@ -11,16 +11,16 @@ export const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
   },
-  loginButton: {
-    width: "100%",
-    height: 70,
-    backgroundColor: colors.LOGIN,
-  },
-  registerButton: {
-    width: "100%",
-    height: 70,
-    backgroundColor: colors.REGISTER,
-  },
+  //   loginButton: {
+  //     width: "100%",
+  //     height: 70,
+  //     backgroundColor: colors.PRIMARY,
+  //   },
+  //   registerButton: {
+  //     width: "100%",
+  //     height: 70,
+  //     backgroundColor: colors.SECONDARY,
+  //   },
   logo: {
     height: 100,
     width: 100,
@@ -30,6 +30,14 @@ export const styles = StyleSheet.create({
     position: "absolute",
     top: 70,
     alignItems: "center",
-    gap: 7,
+  },
+  buttonsContainer: {
+    padding: 20,
+    width: "100%",
+  },
+  tagLine: {
+    fontWeight: "600",
+    fontSize: 20,
+    paddingVertical: 20,
   },
 });
