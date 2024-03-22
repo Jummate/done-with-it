@@ -3,7 +3,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { styles } from "./styles";
 import { colors } from "../../shared/colors";
 
-function ListItemDeleteAction(onPress) {
+function ListItemDeleteAction({ onPress }) {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
