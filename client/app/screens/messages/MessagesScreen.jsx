@@ -3,6 +3,7 @@ import ListItem from "../../components/list-item/ListItem";
 import Screen from "../../components/screen/Screen";
 import { styles } from "./styles";
 import ListItemSeparator from "../../components/list-item-separator/ListItemSeparator";
+import ListItemDeleteAction from "../../components/listitem-delete-action/ListItemDeleteAction";
 
 const messages = [
   {
@@ -33,6 +34,9 @@ function MessagesScreen() {
             subTitle={item.description}
             image={item.image}
             onPress={() => console.log(`item ${index} selected`)}
+            renderRightActions={() => (
+              <ListItemDeleteAction onPress={() => console.log(item)} />
+            )}
           />
         )}
         ItemSeparatorComponent={ListItemSeparator}
