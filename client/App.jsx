@@ -12,6 +12,7 @@ import Screen from "./app/components/screen/Screen";
 import ListingsScreen from "./app/screens/listings/ListingsScreen";
 import AppTextInput from "./app/components/app-textinput/AppTextInput";
 import AppPicker from "./app/components/app-picker/AppPicker";
+import LoginScreen from "./app/screens/login/LoginScreen";
 
 // <ListingDetailsScreen />
 // <WelcomeScreen />
@@ -46,21 +47,7 @@ export default function App() {
   // return <ListingsScreen />;
 
   const [category, setCategory] = useState();
-  return (
-    <Screen>
-      <AppPicker
-        selectedItem={category}
-        onSelectItem={(item) => setCategory(item)}
-        icon="apps"
-        items={categories}
-        placeholder="Category"
-      />
-      <AppTextInput
-        icon="email"
-        placeholder="Email"
-      />
-    </Screen>
-  );
+  return <LoginScreen />;
 }
 
 const styles = StyleSheet.create({
