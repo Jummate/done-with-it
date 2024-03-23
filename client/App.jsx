@@ -4,10 +4,11 @@ import { StyleSheet, Text, View } from "react-native";
 // import ViewImageScreen from "./app/screens/view-image/ViewImageScreen";
 // import ListingDetailsScreen from "./app/screens/listing-image/ListingDetailsScreen";
 // import MessagesScreen from "./app/screens/messages/MessagesScreen";
-import AccountScreen from "./app/screens/account/AccountScreen";
+// import AccountScreen from "./app/screens/account/AccountScreen";
 import Icon from "./app/components/icon/Icon";
 import ListItem from "./app/components/list-item/ListItem";
 import Screen from "./app/components/screen/Screen";
+import ListingsScreen from "./app/screens/listings/ListingsScreen";
 
 // <ListingDetailsScreen />
 // <WelcomeScreen />
@@ -32,7 +33,8 @@ import Screen from "./app/components/screen/Screen";
 // </Screen>
 
 export default function App() {
-  return <AccountScreen />;
+  // return <AccountScreen />;
+  return <ListingsScreen />;
 }
 
 const styles = StyleSheet.create({
