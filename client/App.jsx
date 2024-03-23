@@ -9,6 +9,7 @@ import Icon from "./app/components/icon/Icon";
 import ListItem from "./app/components/list-item/ListItem";
 import Screen from "./app/components/screen/Screen";
 import ListingsScreen from "./app/screens/listings/ListingsScreen";
+import AppTextInput from "./app/components/app-textinput/AppTextInput";
 
 // <ListingDetailsScreen />
 // <WelcomeScreen />
@@ -34,7 +35,15 @@ import ListingsScreen from "./app/screens/listings/ListingsScreen";
 
 export default function App() {
   // return <AccountScreen />;
-  return <ListingsScreen />;
+  // return <ListingsScreen />;
+  return (
+    <Screen>
+      <AppTextInput
+        icon="email"
+        placeholder="Username"
+      />
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({
