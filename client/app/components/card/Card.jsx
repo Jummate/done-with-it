@@ -5,7 +5,10 @@ import AppText from "../app-text/AppText";
 function Card({ title, subTitle, image }) {
   return (
     <View style={styles.card}>
-      <Image source={{ width: "100%", height: 200, uri: image }} />
+      <Image
+        source={{ uri: image }}
+        style={{ width: "100%", height: 200 }}
+      />
       <View style={styles.detailsContainer}>
         <AppText>{title}</AppText>
         <AppText>{subTitle}</AppText>
