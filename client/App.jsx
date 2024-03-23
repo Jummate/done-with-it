@@ -10,6 +10,7 @@ import ListItem from "./app/components/list-item/ListItem";
 import Screen from "./app/components/screen/Screen";
 import ListingsScreen from "./app/screens/listings/ListingsScreen";
 import AppTextInput from "./app/components/app-textinput/AppTextInput";
+import AppPicker from "./app/components/app-picker/AppPicker";
 
 // <ListingDetailsScreen />
 // <WelcomeScreen />
@@ -38,9 +39,13 @@ export default function App() {
   // return <ListingsScreen />;
   return (
     <Screen>
+      <AppPicker
+        icon="apps"
+        placeholder="Category"
+      />
       <AppTextInput
         icon="email"
-        placeholder="Username"
+        placeholder="Email"
       />
     </Screen>
   );
