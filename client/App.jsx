@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 // import WelcomeScreen from "./app/screens/welcome/WelcomeScreen";
@@ -34,13 +35,24 @@ import AppPicker from "./app/components/app-picker/AppPicker";
 }
 // </Screen>
 
+const categories = [
+  { label: "Furniture", value: 1 },
+  { label: "Clothings", value: 2 },
+  { label: "Applicances", value: 3 },
+];
+
 export default function App() {
   // return <AccountScreen />;
   // return <ListingsScreen />;
+
+  const [category, setCategory] = useState();
   return (
     <Screen>
       <AppPicker
+        selectedItem={category}
+        onSelectItem={(item) => setCategory(item)}
         icon="apps"
+        items={categories}
         placeholder="Category"
       />
       <AppTextInput
