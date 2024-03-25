@@ -13,6 +13,7 @@ import ListingsScreen from "./app/screens/listings/ListingsScreen";
 import AppTextInput from "./app/components/app-textinput/AppTextInput";
 import AppPicker from "./app/components/app-picker/AppPicker";
 import LoginScreen from "./app/screens/login/LoginScreen";
+import ListingEditScreen from "./app/screens/listing-edit/ListingEditScreen";
 
 // <ListingDetailsScreen />
 // <WelcomeScreen />
@@ -43,11 +44,12 @@ const categories = [
 ];
 
 export default function App() {
+  return <ListingEditScreen />;
   // return <AccountScreen />;
   // return <ListingsScreen />;
 
-  const [category, setCategory] = useState();
-  return <LoginScreen />;
+  // const [category, setCategory] = useState();
+  // return <LoginScreen />;
 }
 
 const styles = StyleSheet.create({
