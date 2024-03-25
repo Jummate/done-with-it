@@ -16,6 +16,10 @@ export const styles = StyleSheet.create({
   text: {
     flex: 1,
   },
+  placeholder: {
+    color: colors.MEDIUM,
+    flex: 1,
+  },
   //   textInput: {
   //     fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
   //     fontSize: 18,
