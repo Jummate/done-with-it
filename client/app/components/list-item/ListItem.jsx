@@ -4,6 +4,8 @@ import {
   Swipeable,
 } from "react-native-gesture-handler";
 // import Swipeable from "react-native-gesture-handler/Swipeable";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 import { styles } from "./styles";
 import AppText from "../app-text/AppText";
 import { colors } from "../../shared/colors";
