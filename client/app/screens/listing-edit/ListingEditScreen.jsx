@@ -21,7 +21,7 @@ const categories = [
   { label: "Clothing", value: 2 },
   { label: "Camera", value: 3 },
 ];
-function ListingEditScreen(props) {
+function ListingEditScreen() {
   return (
     <Screen style={styles.container}>
       <AppForm
