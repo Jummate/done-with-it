@@ -4,6 +4,8 @@ import {
   Swipeable,
 } from "react-native-gesture-handler";
 // import Swipeable from "react-native-gesture-handler/Swipeable";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 import { styles } from "./styles";
 import AppText from "../app-text/AppText";
 import { colors } from "../../shared/colors";
@@ -37,6 +39,11 @@ function ListItem({
                 <AppText style={styles.subTitle}>{subTitle}</AppText>
               )}
             </View>
+            <MaterialCommunityIcons
+              color={colors.MEDIUM}
+              name="chevron-right"
+              size={25}
+            />
           </View>
         </TouchableHighlight>
       </Swipeable>
