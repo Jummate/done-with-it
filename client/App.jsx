@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 // import WelcomeScreen from "./app/screens/welcome/WelcomeScreen";
 // import ViewImageScreen from "./app/screens/view-image/ViewImageScreen";
 // import ListingDetailsScreen from "./app/screens/listing-image/ListingDetailsScreen";
-// import MessagesScreen from "./app/screens/messages/MessagesScreen";
+import MessagesScreen from "./app/screens/messages/MessagesScreen";
 // import AccountScreen from "./app/screens/account/AccountScreen";
 import Icon from "./app/components/icon/Icon";
 import ListItem from "./app/components/list-item/ListItem";
@@ -52,25 +52,28 @@ export default function App() {
   // return <LoginScreen />;
 
   return (
-    <Screen>
-      <ListItem
-        title="My title"
-        subTitle="My SubTitle"
-        IconComponent={<Icon name="email" />}
-      />
-      <ListItem
-        title="My title2"
-        subTitle="My SubTitle2  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
-        IconComponent={<Icon name="email" />}
-      />
+    // <Screen>
+    //   <ListItem
+    //     title="My title"
+    //     subTitle="My SubTitle"
+    //     IconComponent={<Icon name="email" />}
+    //   />
+    //   <ListItem
+    //     title="My title2"
+    //     subTitle="My SubTitle2  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+    //     IconComponent={<Icon name="email" />}
+    //   />
 
-      {/* <Icon
-        name="email"
-        size={50}
-        bgColor="red"
-        iconColor="white"
-      /> */}
-    </Screen>
+    //   <Icon
+    //     name="email"
+    //     size={50}
+    //     bgColor="red"
+    //     iconColor="white"
+    //   />
+    // </Screen>
+
+    // <MessagesScreen />
+    <ListingEditScreen />
   );
 }
 

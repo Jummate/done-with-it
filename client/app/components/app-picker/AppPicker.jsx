@@ -12,12 +12,19 @@ import { colors } from "../../shared/colors";
 import AppText from "../app-text/AppText";
 import PickerItem from "../pickeritem/PickerItem";
 
-function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
+function AppPicker({
+  icon,
+  items,
+  onSelectItem,
+  placeholder,
+  selectedItem,
+  width = "100%",
+}) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
       <TouchableWithoutFeedback onPress={() => setShowModal(true)}>
-        <View style={styles.container}>
+        <View style={[styles.container, { width }]}>
           {icon && (
             <MaterialCommunityIcons
               name={icon}

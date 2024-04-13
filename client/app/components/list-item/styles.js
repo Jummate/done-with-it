@@ -4,6 +4,7 @@ import { colors } from "../../shared/colors";
 export const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
+    alignItems: "center",
     padding: 15,
     backgroundColor: colors.WHITE,
   },

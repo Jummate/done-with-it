@@ -6,18 +6,35 @@ import { styles } from "./styles";
 import ListItemSeparator from "../../components/list-item-separator/ListItemSeparator";
 import ListItemDeleteAction from "../../components/listitem-delete-action/ListItemDeleteAction";
 
+// const initialMessages = [
+//   {
+//     id: 1,
+//     title: "T1",
+//     description: "D1",
+//     image:
+//       "https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908",
+//   },
+//   {
+//     id: 2,
+//     title: "T2",
+//     description: "D2",
+//     image:
+//       "https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
+//   },
+// ];
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title: "Omololu Jumat",
+    description: "Can I ask a question?",
     image:
       "https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908",
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "Omololu Jumat",
+    description:
+      "I was just calling to confirm whether or not you will be in the office tomorrow.",
     image:
       "https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg",
   },
