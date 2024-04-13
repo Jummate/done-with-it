@@ -39,6 +39,11 @@ function ListItem({
                 <AppText style={styles.subTitle}>{subTitle}</AppText>
               )}
             </View>
+            <MaterialCommunityIcons
+              color={colors.MEDIUM}
+              name="chevron-right"
+              size={25}
+            />
           </View>
         </TouchableHighlight>
       </Swipeable>

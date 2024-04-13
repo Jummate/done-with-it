@@ -44,12 +44,34 @@ const categories = [
 ];
 
 export default function App() {
-  return <ListingEditScreen />;
+  // return <ListingEditScreen />;
   // return <AccountScreen />;
   // return <ListingsScreen />;
 
   // const [category, setCategory] = useState();
   // return <LoginScreen />;
+
+  return (
+    <Screen>
+      <ListItem
+        title="My title"
+        subTitle="My SubTitle"
+        IconComponent={<Icon name="email" />}
+      />
+      <ListItem
+        title="My title2"
+        subTitle="My SubTitle2"
+        IconComponent={<Icon name="email" />}
+      />
+
+      {/* <Icon
+        name="email"
+        size={50}
+        bgColor="red"
+        iconColor="white"
+      /> */}
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({
