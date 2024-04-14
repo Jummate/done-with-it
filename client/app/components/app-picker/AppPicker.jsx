@@ -12,12 +12,21 @@ import { colors } from "../../shared/colors";
 import AppText from "../app-text/AppText";
 import PickerItem from "../pickeritem/PickerItem";
 
-function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
+function AppPicker({
+  icon,
+  items,
+  numberOfColumns = 1,
+  onSelectItem,
+  PickerItemComponent = PickerItem,
+  placeholder,
+  selectedItem,
+  width = "100%",
+}) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
       <TouchableWithoutFeedback onPress={() => setShowModal(true)}>
-        <View style={styles.container}>
+        <View style={[styles.container, { width }]}>
           {icon && (
             <MaterialCommunityIcons
               name={icon}
@@ -51,8 +60,10 @@ function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
         <FlatList
           data={items}
           keyExtractor={(item) => item.value.toString()}
+          numColumns={numberOfColumns}
           renderItem={({ item }) => (
-            <PickerItem
+            <PickerItemComponent
+              item={item}
               label={item.label}
               onPress={() => {
                 setShowModal(false);
